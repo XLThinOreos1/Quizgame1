@@ -66,6 +66,7 @@ class Program
                 points++;
                 Task.Delay(2000).Wait();
             }
+            // line 69 ( ͡° ͜ʖ ͡°)
             else
             {
                 wrongAnswer();
