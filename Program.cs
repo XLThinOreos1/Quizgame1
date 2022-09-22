@@ -231,7 +231,7 @@ class Program
                 FiggleFonts.Modular.Render("GAME OVER"));
             Task.Delay(3000).Wait();
             Console.WriteLine($"You ran out of lives. The game is over! You got to question {QuestionNumber} and obtained {points} points!");
-            Task.Delay(5000).Wait();
+            Task.Delay(3500).Wait();
             PlayAgain();
         }
 
@@ -313,6 +313,7 @@ class Program
         {
             Console.Clear();
             help();
+            goto Start;
         }
         // Easter egg för de som tror de är roliga och skriver "anything" när den säger "Type anything to start"
         else if (resultLow == "anything")
@@ -325,6 +326,7 @@ class Program
         {
             Console.Clear();
             SettingsMenu();
+            goto Start;
         }
         Console.Clear();
         Console.WriteLine("Do you want to play endless mode?\n1 for yes ----- Anything else for no\n(Endless mode is turned off by default)");
